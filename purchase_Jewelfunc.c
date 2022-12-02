@@ -17,7 +17,7 @@ void purchaseJewelfunc(char refnum[]){
     printf("refnum %s \n",refnum);
   	for(int i=0;i<47;i++){
         if(strcmp(refnum,catalogstr[i].ref)==0){
-            printf("##***CARTIER CATALOG JEWELERY STORE***###\nThis item %s has been returned by customer and add in list \nAmount Returned:%d\n",catalogstr[i].category,catalogstr[i].price);
+            printf("##***CARTIER CATALOG JEWELERY STORE***###\nThis item %s has been purchased by customer \nAmount paid:%d\n",catalogstr[i].category,catalogstr[i].price);
 
             catalogstr[i].quantity=catalogstr[i].quantity-1;
 
